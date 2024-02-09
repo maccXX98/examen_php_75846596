@@ -14,8 +14,8 @@ Este proyecto es una API desarrollada con Laravel. Proporciona funcionalidades p
 
 ## Instalación
 
-1. Clona el repositorio en tu máquina local con `git clone https://github.com/[tu_usuario]/[nombre_del_proyecto].git`
-2. Navega al directorio del proyecto con `cd [nombre_del_proyecto]`
+1. Clona el repositorio en tu máquina local con `git clone https://github.com/maccXX98/examen_php_75846596.git`
+2. Navega al directorio del proyecto con `cd examen_php_75846596`
 3. Instala las dependencias con `composer install`
 4. Copia el archivo `.env.example` a `.env` con `cp .env.example .env`
 5. Genera una clave de aplicación con `php artisan key:generate`
