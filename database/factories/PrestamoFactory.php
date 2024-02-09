@@ -2,10 +2,10 @@
 
 namespace Database\Factories;
 
-use App\Models\Prestamos;
+use App\Models\Prestamo;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class PrestamosFactory extends Factory
+class PrestamoFactory extends Factory
 {
 
     /**
@@ -13,7 +13,7 @@ class PrestamosFactory extends Factory
      * 
      * @var string
      */
-    protected $model = Prestamos::class;
+    protected $model = Prestamo::class;
 
     /**
      * Define the model's default state.

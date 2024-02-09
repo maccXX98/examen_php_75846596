@@ -13,13 +13,12 @@ class Cliente extends Migration
      */
     public function up()
     {
-        Schema::create('clientes', function(Blueprint $table) {
+        Schema::create('clientes', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('nombre');
             $table->string('email');
-            $table->string('celular');
-            $table->timestamp('updated_at')->nullable();
-            $table->timestamp('created_at')->nullable();
+            $table->integer('celular');
+            $table->timestamps();
         });
     }
 

@@ -23,7 +23,7 @@ class ClienteFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->randomElement(['Sergio Ampuero', 'Gustavo Sanchez', 'Juan Jose Silva', 'Orlando Ojeda', 'Mauricio Orellana', 'Rosario Mamani']),
+            'nombre' => $this->faker->randomElement(['Sergio Ampuero', 'Gustavo Sanchez', 'Juan Jose Silva', 'Orlando Ojeda', 'Mauricio Orellana', 'Rosario Mamani']),
             'email' => $this->faker->unique()->safeEmail,
             'celular' => $this->faker->unique()->numberBetween(70000000, 79900000),
         ];

@@ -13,24 +13,21 @@ class Libro extends Migration
      */
     public function up()
     {
-        Schema::create('libros', function(Blueprint $table) {
+        Schema::create('libros', function (Blueprint $table) {
             $table->id();
             $table->string('titulo');
-            $table->integer('autor_id');
-            $table->string('lote');
-            $table->text('description');
-            $table->timestamp('updated_at')->nullable();
-            $table->timestamp('created_at')->nullable();
+            $table->unsignedBigInteger('autor_id')->nullable();
+            $table->integer('lote');
+            $table->text('descripcion');
+            $table->timestamps();
+
+            $table->foreign('autor_id')->references('id')->on('autores');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('libros');
     }
+
 }

@@ -23,7 +23,7 @@ class AutorFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->randomElement(['Ludbin Guilberth', 'Kevin Torrez', 'Tania Payllo', 'Susana Ancasi', 'Eynar Torrez', 'Jhonny Chura']),
+            'nombre' => $this->faker->randomElement(['Ludbin Guilberth', 'Kevin Torrez', 'Tania Payllo', 'Susana Ancasi', 'Eynar Torrez', 'Jhonny Chura']),
         ];
     }
 }
